@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshims_binder
+    libshims_binder \
+    libwui
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
