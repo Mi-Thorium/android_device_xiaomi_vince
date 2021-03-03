@@ -1,3 +1,7 @@
 # Xiaomi vince - Camera
 persist.vendor.camera.CDS=off
 persist.vendor.camera.video.CDS=off
+
+# Xiaomi vince - SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8953
