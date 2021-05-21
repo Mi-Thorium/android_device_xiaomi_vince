@@ -43,6 +43,7 @@ VENDOR_SECURITY_PATCH := 2019-10-01
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 
 # Inherit from the proprietary version
 include vendor/xiaomi/vince/BoardConfigVendor.mk
