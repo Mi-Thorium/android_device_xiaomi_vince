@@ -9,7 +9,7 @@
 set -e
 
 export DEVICE=vince
-export DEVICE_COMMON=msm8953-common
+export DEVICE_COMMON=mithorium-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

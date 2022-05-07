@@ -4,13 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from msm8953-common
-$(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
+# Platform
+TARGET_BOARD_PLATFORM := msm8953
+
+# Inherit from mithorium-common
+$(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
+
+PRODUCT_PACKAGES += \
+    HapticOverlay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
@@ -29,11 +35,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v27/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0-v27.so
 
-# Consumer IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953
@@ -41,20 +42,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+# Input
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/)
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc \
-    init.vince.rc
+    init.xiaomi.device.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
