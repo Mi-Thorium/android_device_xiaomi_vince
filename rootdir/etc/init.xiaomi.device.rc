@@ -1,3 +1,4 @@
+# Fingerprint
 on boot
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
@@ -12,3 +13,7 @@ on boot
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/wakeup_enable
     chown system system /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
+
+# IR
+on boot
+    chown system system /dev/peel_ir
