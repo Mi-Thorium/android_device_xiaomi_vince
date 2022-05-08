@@ -1,3 +1,7 @@
+# WARNING: Camera doesn't work on this tree
+
+This tree is still in WIP state so don't complain about anything :)
+
 # Device Tree for Xiaomi Redmi 5 Plus (vince)
 
 ## Spec Sheet
