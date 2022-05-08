@@ -51,6 +51,7 @@ vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dcrf_lib.so
 vendor/lib/libmmcamera_dummyalgo.so
+vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc2.so
