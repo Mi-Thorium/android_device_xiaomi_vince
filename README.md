@@ -1,3 +1,11 @@
+# WARNING: Camera doesn't work on this tree
+
+If you still want to proceed with using this tree:
+- Checkout common tree to `a11/wip/mi8953` branch
+- Clone this [kernel](https://github.com/mi-msm8937/wip-k4.9/tree/mi8953-my) to `kernel/xiaomi/vince`
+
+This tree is still in WIP state so don't complain about anything :)
+
 # Device Tree for Xiaomi Redmi 5 Plus (vince)
 
 ## Spec Sheet
