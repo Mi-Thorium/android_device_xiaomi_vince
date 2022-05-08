@@ -39,13 +39,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.xiaomi.device.rc
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshims_android \
-    libshims_binder \
-    libshims_ui \
-    libwui
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
