@@ -817,7 +817,7 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 # Firmware (Audio)
 etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin
 
-# Firmware (GPU) - from PAN
+# Firmware (GPU) - from daisy
 vendor/firmware/a506_zap.b00
 vendor/firmware/a506_zap.b01
 vendor/firmware/a506_zap.b02
