@@ -20,3 +20,11 @@ cc_library_shared {
     srcs: ["GraphicBuffer.cpp"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libshim_gf_hal",
+    compile_multilib: "64",
+    srcs: ["libshim_gf_hal.cpp"],
+    shared_libs: ["liblog"],
+    vendor: true,
+}

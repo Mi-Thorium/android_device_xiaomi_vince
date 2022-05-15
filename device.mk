@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.xiaomi.device.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_gf_hal
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

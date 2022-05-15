@@ -45,5 +45,8 @@ VENDOR_SECURITY_PATCH := 2019-10-01
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS += /vendor/lib64/libgf_hal.so|libshim_gf_hal.so
+
 # Inherit from the proprietary version
 include vendor/xiaomi/vince/BoardConfigVendor.mk
