@@ -20,7 +20,6 @@ TARGET_SCREEN_DENSITY := 440
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += earlycon=msm_hsl_uart,0x78af000
 TARGET_KERNEL_CONFIG := vince_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/vince
 
