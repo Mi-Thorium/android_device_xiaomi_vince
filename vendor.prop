@@ -11,6 +11,9 @@ persist.camera.CDS=off
 persist.camera.video.CDS=off
 persist.camera.HAL3.enabled=1
 
+# Xiaomi vince - Encryption
+ro.crypto.volume.contents_mode=aes-256-xts
+
 # Xiaomi vince - SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8953
