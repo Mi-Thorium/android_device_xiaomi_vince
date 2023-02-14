@@ -860,3 +860,6 @@ vendor/lib64/sensors.ssc.so
 
 # Sensors configs
 vendor/etc/sensors/sensor_def_qcomdev.conf
+
+# VNDK
+lib/android.frameworks.sensorservice@1.0.so:vendor/lib/android.frameworks.sensorservice@1.0-v27.so
